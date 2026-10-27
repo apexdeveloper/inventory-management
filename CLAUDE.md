@@ -18,6 +18,7 @@ Use the Task tool with these specialized subagents for appropriate tasks:
 
 ### Skills
 - **backend-api-test** skill: Use when writing or modifying tests in `tests/backend` directory with pytest and FastAPI TestClient
+- **vue-component-analyzer** skill: Use when analyzing Vue components for performance or code-reuse improvements. Reports only; hand fixes to vue-expert
 
 ### MCP Tools
 - **ALWAYS use GitHub MCP tools** (`mcp__github__*`) for ALL GitHub operations
