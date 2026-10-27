@@ -6,6 +6,7 @@ export default {
     orders: '注文',
     finance: '財務',
     restocking: '補充',
+    reports: 'レポート',
     demandForecast: '需要予測',
     companyName: '触媒コンポーネンツ',
     subtitle: '在庫管理システム'
@@ -235,6 +236,36 @@ export default {
   },
 
   // Filters
+  reports: {
+    title: '業績レポート',
+    description: '四半期の業績指標と月次の推移を確認できます',
+    loadError: 'レポートの読み込みに失敗しました',
+    quarterlyPerformance: '四半期業績',
+    monthlyRevenueTrend: '月次売上推移',
+    monthOverMonth: '前月比分析',
+    quarterLabel: '{year}年 第{quarter}四半期',
+    monthLabel: '{year}年{month}',
+    notAvailable: '該当なし',
+    table: {
+      quarter: '四半期',
+      totalOrders: '総注文数',
+      totalRevenue: '総売上',
+      avgOrderValue: '平均注文額',
+      fulfillmentRate: 'フルフィルメント率',
+      month: '月',
+      orders: '注文数',
+      revenue: '売上',
+      change: '増減額',
+      growthRate: '成長率'
+    },
+    stats: {
+      totalRevenue: '総売上',
+      avgMonthlyRevenue: '月平均売上',
+      totalOrders: '総注文数',
+      bestQuarter: '最高業績の四半期'
+    }
+  },
+
   filters: {
     timePeriod: '期間',
     location: '場所',

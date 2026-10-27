@@ -314,7 +314,7 @@ export default {
 }
 
 .budget-label {
-  color: #64748b;
+  color: var(--muted);
   font-size: 0.875rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -324,13 +324,12 @@ export default {
 .budget-value {
   font-size: 2rem;
   font-weight: 700;
-  color: #0f172a;
+  color: var(--text);
   letter-spacing: -0.025em;
 }
 
 .budget-slider {
   width: 100%;
-  accent-color: #0f172a;
   cursor: pointer;
 }
 
@@ -339,21 +338,21 @@ export default {
   justify-content: space-between;
   margin-top: 0.375rem;
   font-size: 0.813rem;
-  color: #64748b;
+  color: var(--muted);
 }
 
 .card-hint {
   margin-top: 0.25rem;
   font-size: 0.813rem;
-  color: #64748b;
+  color: var(--muted);
 }
 
 .place-order-btn {
   flex-shrink: 0;
   margin-left: 1rem;
   padding: 0.625rem 1.25rem;
-  background: #0f172a;
-  color: white;
+  background: var(--text);
+  color: var(--on-solid);
   border: none;
   border-radius: 8px;
   font-size: 0.875rem;
@@ -363,11 +362,11 @@ export default {
 }
 
 .place-order-btn:hover:not(:disabled) {
-  background: #1e293b;
+  background: var(--text);
 }
 
 .place-order-btn:disabled {
-  background: #cbd5e1;
+  background: var(--border-strong);
   cursor: not-allowed;
 }
 
@@ -376,9 +375,9 @@ export default {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  background: #f0fdf4;
-  border: 1px solid #bbf7d0;
-  color: #065f46;
+  background: var(--success-bg);
+  border: 1px solid var(--success-border);
+  color: var(--success-text);
   padding: 0.875rem 1rem;
   border-radius: 8px;
   margin-bottom: 1rem;
@@ -386,7 +385,7 @@ export default {
 }
 
 .confirmation-link {
-  color: #065f46;
+  color: var(--success-text);
   font-weight: 600;
   white-space: nowrap;
 }
@@ -401,12 +400,12 @@ export default {
 }
 
 .row-inactive td {
-  color: #94a3b8;
+  color: var(--faint);
 }
 
 .empty-state {
   text-align: center;
-  color: #64748b;
+  color: var(--muted);
   padding: 3rem;
 }
 </style>

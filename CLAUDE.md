@@ -18,6 +18,7 @@ Use the Task tool with these specialized subagents for appropriate tasks:
 
 ### Skills
 - **backend-api-test** skill: Use when writing or modifying tests in `tests/backend` directory with pytest and FastAPI TestClient
+- **vue-component-analyzer** skill: Use when analyzing Vue components for performance or code-reuse improvements. Reports only; hand fixes to vue-expert
 
 ### MCP Tools
 - **ALWAYS use GitHub MCP tools** (`mcp__github__*`) for ALL GitHub operations
@@ -73,7 +74,9 @@ npm install && npm run dev
 - Styles: `client/src/App.vue`
 
 ## Design System
-- Colors: Slate/gray (#0f172a, #64748b, #e2e8f0)
+- Colors: Cream + hot lime, defined as CSS variables in `:root` in `client/src/App.vue`; use `var(--...)`, not hex
+  - Surfaces `--bg` #fbf8ef, `--surface` #fffdf7; text `--text` #1c1f14, `--muted` #6b6a5c; borders `--border` #e8e1cc
+  - Lime `--accent` #c6f432 for fills only (text on it is `--on-accent`); `--accent-strong` #4d6b00 when lime is text or a thin line
 - Status: green/blue/yellow/red
 - Charts: Custom SVG, CSS Grid for layouts
 - No emojis in UI
